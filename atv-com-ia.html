@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+        header > h1 {
+            background-color: palevioletred;
+            padding: 40px;
+    
+            font-size: 80px;
+            font-family: Arial, Helvetica, sans-serif;
+    
+            text-align: center;
+        }
+        
+        footer {
+          text-align: center;
+          font-size: small;
+          margin-top: 30px;
+          
+        }
+
+        .container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          margin-top: 50px;
+        }
+                
+        #pokemon-img {
+            height: 300px;
+            border: 3px solid black;
+            border-radius: 15px;
+    
+            padding: 5px;
+            padding-bottom: 60px;
+        }
+    
+        .botoes { 
+          display: flex; 
+          flex-direction: row; 
+          justify-content: space-between; 
+          gap: 10px; 
+          background-color: antiquewhite; 
+          padding: 20px; 
+          margin-top: 10px; }
+    
+        .botoes > button {
+            background-color: green;
+            color: white;
+    
+            font-size: larger;
+            font-weight: bold;
+    
+            padding: 10px;
+            border-radius: 10px;
+    
+            width: 150px;
+        }
+    </style>
+  </head>
+  
+  <body>
+    <header>
+      <h1>Passar Pokemon</h1>
+    </header>
+    <main class="container">
+      <div class="pokemons">
+        <span id="contarImg">Foto 1 de 10</span>
+      </div>
+      <div>
+        <img id="pokemon-img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png" />
+        <div class="botoes">
+          <button id="voltar" onclick="voltar('VOLTAR')">VOLTAR</button>
+          <button id="adiantar" onclick="avancar('AVANÇAR')">AVANÇAR</button>
+        </div>
+      </div>
+    </main>
+    <script src="./atv-com-ia.js">
+    </script>
+    <div>
+      <footer>Agne Stephane | 582756 | agne.steph.moss@gmail.com</footer>
+      </div>
+  </body>
+  </html>
